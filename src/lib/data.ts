@@ -29,36 +29,43 @@ export const CLASS_LEVELS = [
   {
     id: 1,
     level: 'LKG',
+    icon: '🌱',
     description: 'Introduction to Tamil alphabet, basic phonics, and simple vocabulary through songs and games.',
   },
   {
     id: 2,
     level: 'UKG',
+    icon: '🌼',
     description: 'Alphabet recognition, early reading, and foundational writing skills.',
   },
   {
     id: 3,
-    level: 'G1',
+    level: 'Grade 1',
+    icon: '✏️',
     description: 'Reading short passages, writing simple sentences, and Tamil numbers.',
   },
   {
     id: 4,
-    level: 'G2',
+    level: 'Grade 2',
+    icon: '📖',
     description: 'Building vocabulary, cultural stories, and introductory grammar.',
   },
   {
     id: 5,
-    level: 'G3',
+    level: 'Grade 3',
+    icon: '📝',
     description: 'Grammar fundamentals, essay writing, and Thirukkural recitation.',
   },
   {
     id: 6,
-    level: 'G4',
+    level: 'Grade 4',
+    icon: '📚',
     description: 'Tamil literature excerpts, advanced writing, and spoken Tamil practice.',
   },
   {
     id: 7,
-    level: 'G5',
+    level: 'Grade 5',
+    icon: '🎓',
     description: 'Classical Tamil literature, advanced composition, and cultural presentations.',
   },
 ]
