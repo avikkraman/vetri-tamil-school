@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Hero from '@/components/Hero'
 import SectionHeading from '@/components/SectionHeading'
-import Card from '@/components/Card'
 import { CLASS_LEVELS } from '@/lib/data'
 
 export const metadata: Metadata = {
@@ -10,49 +9,28 @@ export const metadata: Metadata = {
   description: 'Tamil language classes for all ages and skill levels — Saturdays in Surrey, BC.',
 }
 
-const badgeColors = ['gold', 'primary', 'green', 'blue'] as const
-
 export default function ClassesPage() {
   return (
     <>
       <Hero
         title="Tamil Classes"
         titleTamil="தமிழ் வகுப்புகள்"
-        subtitle="Four progressive levels for ages 5 and up. Saturday sessions designed around busy family schedules."
+        subtitle="Seven grade levels from LKG through G5. Saturday sessions designed around busy family schedules."
       />
 
       {/* ── Level detail cards ── */}
       <section className="py-8 pb-16 bg-gray-50" aria-labelledby="levels-heading">
         <div className="section">
           <SectionHeading
-            title="Level Details"
+            title="Grade Levels"
             subtitle="What your child will learn at each stage."
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {CLASS_LEVELS.map((cls, i) => (
-              <Card
-                key={cls.id}
-                title={cls.level}
-                titleTamil={cls.levelTamil}
-                badge={cls.ageGroup}
-                badgeColor={badgeColors[i % badgeColors.length]}
-                footer={
-                  <div className="flex items-center justify-between text-gray-500">
-                    <span>🕐 {cls.schedule}</span>
-                    <span
-                      className={`text-xs font-medium px-2 py-0.5 rounded-full ${
-                        cls.seats === 'Open enrollment'
-                          ? 'bg-green-100 text-green-700'
-                          : 'bg-amber-100 text-amber-700'
-                      }`}
-                    >
-                      {cls.seats}
-                    </span>
-                  </div>
-                }
-              >
-                <p className="leading-relaxed">{cls.description}</p>
-              </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {CLASS_LEVELS.map((cls) => (
+              <div key={cls.id} className="card">
+                <h3 className="font-bold text-gray-900 text-lg mb-2">{cls.level}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{cls.description}</p>
+              </div>
             ))}
           </div>
         </div>
