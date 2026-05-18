@@ -104,22 +104,12 @@ export default function HomePage() {
             titleTamil="வகுப்புகள்"
             subtitle="Four levels for all ages — from first letters to fluent reading and writing."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {CLASS_LEVELS.map((cls) => (
-              <Card
-                key={cls.id}
-                title={cls.level}
-                titleTamil={cls.levelTamil}
-                badge={cls.ageGroup}
-                badgeColor="gold"
-                footer={
-                  <p className="text-gray-500 flex items-center gap-2">
-                    <span aria-hidden="true">🕐</span> {cls.schedule}
-                  </p>
-                }
-              >
-                <p>{cls.description}</p>
-              </Card>
+              <div key={cls.id} className="card">
+                <h3 className="font-bold text-gray-900 text-lg mb-2">{cls.level}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{cls.description}</p>
+              </div>
             ))}
           </div>
           <div className="text-center mt-10">
