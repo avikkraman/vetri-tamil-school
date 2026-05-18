@@ -7,11 +7,13 @@
 3. ~~**1.3** Update home CTA copy from "2025–26" to "2026–27"~~ ✓
 4. ~~**2.1** Wire contact form to real backend (Formspree)~~ ✓
 5. ~~**2.2** Add Google Maps embed to contact page~~ removed
-6. **3.1** Load Noto Sans Tamil from Google Fonts
-7. **3.2** Add favicon
-8. **3.3** Add Open Graph metadata
-9. **3.4** Add social links to footer
-10. **7.1** Add custom 404 page
+6. **8.1** Edit class descriptions for each grade level
+7. **8.2** Add principal's video message (About or Home page)
+8. **3.1** Load Noto Sans Tamil from Google Fonts
+9. **3.2** Add favicon
+10. **3.3** Add Open Graph metadata
+11. **3.4** Add social links to footer
+12. **7.1** Add custom 404 page
 
 ---
 
@@ -69,6 +71,15 @@
 | # | Issue | File | Detail |
 |---|-------|------|--------|
 | 6.1 | Upcoming section is empty (all events are past-dated) | `lib/data.ts` | Blocked by item 1.1 |
+
+---
+
+## 8. Upcoming Content
+
+| # | Item | File | Detail |
+|---|------|------|--------|
+| 8.1 | Edit class descriptions for each grade level | `lib/data.ts` | Update LKG–G5 descriptions to reflect actual curriculum |
+| 8.2 | Principal's video message | `app/about/page.tsx` or `app/page.tsx` | Embed a YouTube/hosted video with an intro from the principal |
 
 ---
 

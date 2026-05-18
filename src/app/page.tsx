@@ -71,7 +71,7 @@ export default function HomePage() {
               {
                 icon: '🗓️',
                 title: 'Flexible Saturdays',
-                desc: 'All classes on Saturday mornings — no weekday disruption to school or activities.',
+                desc: 'All classes on Saturdays — no weekday disruption to school or activities.',
               },
               {
                 icon: '🌟',
