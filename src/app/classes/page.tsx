@@ -28,9 +28,10 @@ export default function ClassesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {CLASS_LEVELS.map((cls) => (
               <div key={cls.id} className="card">
-                <h3 className="font-bold text-gray-900 text-lg mb-2 flex items-center gap-2">
+                <h3 className="font-bold text-gray-900 text-lg flex items-center gap-2">
                   <span aria-hidden="true">{cls.icon}</span>{cls.level}
                 </h3>
+                <p className="tamil text-sm text-gold mb-2">{cls.levelTamil}</p>
                 <p className="text-gray-600 text-sm leading-relaxed">{cls.description}</p>
               </div>
             ))}
