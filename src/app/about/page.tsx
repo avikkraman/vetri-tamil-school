@@ -28,8 +28,7 @@ export default function AboutPage() {
             />
             <div className="prose prose-gray max-w-none space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Vetri Tamil School was founded in {SCHOOL.founded} by the{' '}
-                <strong>{SCHOOL.org}</strong> to provide Tamil-Canadian children in Surrey, BC a
+                Vetri Tamil School was founded in {SCHOOL.founded} to provide Tamil-Canadian children in Surrey, BC a
                 structured, joyful environment to learn their mother tongue.
               </p>
               <p>

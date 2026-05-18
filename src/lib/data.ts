@@ -4,7 +4,6 @@ export const SCHOOL = {
   name: 'Vetri Tamil School',
   nameTamil: 'வெற்றி தமிழ்ப்பள்ளி',
   tagline: 'Nurturing Language, Culture & Identity',
-  org: 'Sri Yoga Hanuman Cultural Society',
   email: 'vtsthabaal@gmail.com',
   phone: '604-368-8428',
   location: 'Surrey, British Columbia, Canada',

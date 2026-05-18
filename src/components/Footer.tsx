@@ -15,7 +15,6 @@ export default function Footer() {
             <p className="text-primary-light mt-3 text-sm leading-relaxed">
               {SCHOOL.tagline}
             </p>
-            <p className="text-sm text-white/60 mt-2">{SCHOOL.org}</p>
           </div>
 
           {/* Navigation */}
