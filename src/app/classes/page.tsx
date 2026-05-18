@@ -21,53 +21,6 @@ export default function ClassesPage() {
         subtitle="Four progressive levels for ages 5 and up. Saturday sessions designed around busy family schedules."
       />
 
-      {/* ── Schedule overview ── */}
-      <section className="py-16" aria-labelledby="schedule-heading">
-        <div className="section">
-          <SectionHeading
-            title="Class Schedule"
-            titleTamil="வகுப்பு அட்டவணை"
-            subtitle="All classes run on Saturdays. Two time slots to fit every family."
-          />
-
-          <div className="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
-            <table className="w-full text-sm text-left">
-              <thead className="bg-primary text-white">
-                <tr>
-                  <th scope="col" className="px-4 py-3 font-semibold">Level</th>
-                  <th scope="col" className="px-4 py-3 font-semibold">Age Group</th>
-                  <th scope="col" className="px-4 py-3 font-semibold">Day</th>
-                  <th scope="col" className="px-4 py-3 font-semibold">Time</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                {CLASS_LEVELS.map((cls, i) => (
-                  <tr
-                    key={cls.id}
-                    className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
-                  >
-                    <td className="px-4 py-3 font-medium text-gray-900">
-                      <span>{cls.level}</span>
-                      <span className="block tamil text-xs text-gold mt-0.5">
-                        {cls.levelTamil}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 text-gray-600">{cls.ageGroup}</td>
-                    <td className="px-4 py-3 text-gray-600">Saturday</td>
-                    <td className="px-4 py-3 text-gray-600">
-                      {cls.schedule.replace('Saturdays, ', '')}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-gray-400 mt-3 text-center">
-            * Schedule subject to change. Check Events or Contact us to confirm.
-          </p>
-        </div>
-      </section>
-
       {/* ── Level detail cards ── */}
       <section className="py-8 pb-16 bg-gray-50" aria-labelledby="levels-heading">
         <div className="section">
