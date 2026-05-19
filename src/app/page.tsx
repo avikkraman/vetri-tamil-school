@@ -56,7 +56,7 @@ export default function HomePage() {
               {
                 icon: '📚',
                 title: 'Structured Curriculum',
-                desc: 'Four progressive levels from alphabet basics to classical literature, designed for heritage learners.',
+                desc: 'Seven progressive levels from alphabet basics to classical literature, designed for heritage learners.',
               },
               {
                 icon: '🎭',
@@ -102,7 +102,7 @@ export default function HomePage() {
           <SectionHeading
             title="Our Classes"
             titleTamil="வகுப்புகள்"
-            subtitle="Four levels for all ages — from first letters to fluent reading and writing."
+            subtitle="Seven levels for all ages — from first letters to fluent reading and writing."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {CLASS_LEVELS.map((cls) => (
