@@ -35,6 +35,7 @@ export default function EventsPage() {
         title="Events & Calendar"
         titleTamil="நிகழ்வுகள்"
         subtitle="Cultural celebrations, academic milestones, and community gatherings throughout the year."
+        primaryCta={{ label: 'View School Calendar', href: '#school-calendar' }}
       />
 
       {/* ── Upcoming ── */}
@@ -70,7 +71,7 @@ export default function EventsPage() {
       )}
 
       {/* ── School Closures ── */}
-      <section className="py-16" aria-labelledby="calendar-heading">
+      <section id="school-calendar" className="py-16" aria-labelledby="calendar-heading">
         <div className="section max-w-4xl mx-auto">
           <SectionHeading
             title="School Calendar"
