@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { SCHOOL, NAV_LINKS } from '@/lib/data'
+import { SCHOOL } from '@/lib/data'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white mt-20">
       <div className="section py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
           {/* Brand */}
           <div>
             <p className="font-bold text-lg">{SCHOOL.name}</p>
@@ -15,25 +15,6 @@ export default function Footer() {
             <p className="text-primary-light mt-3 text-sm leading-relaxed">
               {SCHOOL.tagline}
             </p>
-          </div>
-
-          {/* Navigation */}
-          <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wider text-gold mb-4">
-              Pages
-            </h3>
-            <ul className="space-y-2" role="list">
-              {NAV_LINKS.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-white/80 hover:text-white text-sm transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Contact */}
