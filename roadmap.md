@@ -7,7 +7,7 @@
 3. ~~**1.3** Update home CTA copy from "2025–26" to "2026–27"~~ ✓
 4. ~~**2.1** Wire contact form to real backend (Formspree)~~ ✓
 5. ~~**2.2** Add Google Maps embed to contact page~~ removed
-6. **8.1** Edit class descriptions for each grade level
+6. ~~**8.1** Edit class descriptions for each grade level~~ ✓
 7. **8.2** Add principal's video message (About or Home page)
 8. **3.1** Load Noto Sans Tamil from Google Fonts
 9. **3.2** Add favicon
@@ -78,7 +78,7 @@
 
 | # | Item | File | Detail |
 |---|------|------|--------|
-| 8.1 | Edit class descriptions for each grade level | `lib/data.ts` | Update LKG–G5 descriptions to reflect actual curriculum |
+| ~~8.1~~ | ~~Edit class descriptions for each grade level~~ | ~~`lib/data.ts`~~ | ✓ Done — English + Tamil descriptions added for all 7 levels |
 | 8.2 | Principal's video message | `app/about/page.tsx` or `app/page.tsx` | Embed a YouTube/hosted video with an intro from the principal |
 
 ---
