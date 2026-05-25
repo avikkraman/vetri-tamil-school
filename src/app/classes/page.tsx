@@ -33,7 +33,7 @@ export default function ClassesPage() {
                 </h3>
                 <p className="tamil text-sm text-gold mb-2">{cls.levelTamil}</p>
                 <p className="text-gray-600 text-sm leading-relaxed">{cls.description}</p>
-                <p className="tamil text-gray-500 text-sm leading-relaxed mt-1">{cls.descriptionTamil}</p>
+                <p className="tamil text-gray-500 text-sm leading-relaxed mt-4">{cls.descriptionTamil}</p>
               </div>
             ))}
           </div>
