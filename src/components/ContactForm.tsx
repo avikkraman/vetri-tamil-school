@@ -108,7 +108,6 @@ export default function ContactForm() {
                      focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary bg-white"
         >
           <option value="">Select an option</option>
-          <option value="enroll">Enrolling my child</option>
           <option value="info">General information</option>
           <option value="volunteer">Volunteering / Teaching</option>
           <option value="sponsor">Sponsorship / Support</option>

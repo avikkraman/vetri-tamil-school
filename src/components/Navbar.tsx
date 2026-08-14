@@ -47,9 +47,14 @@ export default function Navbar() {
             )
           })}
           <li>
-            <Link href="/contact" className="btn-primary text-sm ml-2">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScaHjlUYpSzt4gZQWY9748qU6FohXEkkrsA0weyGJvZ0skxNQ/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-sm ml-2"
+            >
               Enroll Now
-            </Link>
+            </a>
           </li>
         </ul>
 
@@ -97,13 +102,15 @@ export default function Navbar() {
               )
             })}
             <li className="pt-2">
-              <Link
-                href="/contact"
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScaHjlUYpSzt4gZQWY9748qU6FohXEkkrsA0weyGJvZ0skxNQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
                 className="btn-primary w-full text-center block"
               >
                 Enroll Now
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

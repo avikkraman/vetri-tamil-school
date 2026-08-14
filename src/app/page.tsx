@@ -19,7 +19,7 @@ export default function HomePage() {
         title={SCHOOL.name}
         titleTamil={SCHOOL.nameTamil}
         subtitle={`${SCHOOL.tagline} — Saturday Tamil classes for children in ${SCHOOL.location}.`}
-        primaryCta={{ label: 'Enroll Your Child', href: '/contact' }}
+        primaryCta={{ label: 'Enroll Your Child', href: 'https://docs.google.com/forms/d/e/1FAIpQLScaHjlUYpSzt4gZQWY9748qU6FohXEkkrsA0weyGJvZ0skxNQ/viewform', external: true }}
         secondaryCta={{ label: 'View Classes', href: '/classes' }}
       />
 
@@ -170,13 +170,15 @@ export default function HomePage() {
             Registration for the 2025–26 school year is open. Spaces are limited — reach out today.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScaHjlUYpSzt4gZQWY9748qU6FohXEkkrsA0weyGJvZ0skxNQ/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-gold hover:bg-gold-light text-white font-semibold
                          px-8 py-3 rounded-lg transition-colors"
             >
-              Contact Us to Enroll
-            </Link>
+              Enroll Now
+            </a>
             <Link
               href="/about"
               className="inline-block border-2 border-white/60 hover:border-white text-white

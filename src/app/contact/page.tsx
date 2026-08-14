@@ -61,12 +61,16 @@ export default function ContactPage() {
         <div className="section max-w-3xl mx-auto text-center">
           <h2 className="text-xl font-bold text-gray-900">Ready to enroll?</h2>
           <p className="text-gray-600 mt-2 text-sm leading-relaxed">
-            Use the form above, or email us directly at{' '}
-            <a href={`mailto:${SCHOOL.email}`} className="text-primary font-medium hover:underline">
-              {SCHOOL.email}
-            </a>
-            . We'll send you the enrollment package with the registration form and fee information.
+            Complete our online registration form to enroll your child.
           </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScaHjlUYpSzt4gZQWY9748qU6FohXEkkrsA0weyGJvZ0skxNQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary mt-4 inline-block"
+          >
+            Enroll Now
+          </a>
         </div>
       </section>
     </>

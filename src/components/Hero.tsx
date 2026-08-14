@@ -4,8 +4,8 @@ interface HeroProps {
   title: string
   titleTamil?: string
   subtitle: string
-  primaryCta?: { label: string; href: string }
-  secondaryCta?: { label: string; href: string }
+  primaryCta?: { label: string; href: string; external?: boolean }
+  secondaryCta?: { label: string; href: string; external?: boolean }
   /** Use 'home' for the large landing hero, 'page' for inner page banners */
   variant?: 'home' | 'page'
 }
@@ -62,24 +62,50 @@ export default function Hero({
         {(primaryCta || secondaryCta) && (
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             {primaryCta && (
-              <Link
-                href={primaryCta.href}
-                className="inline-block bg-gold hover:bg-gold-light text-white font-semibold
-                           px-8 py-3 rounded-lg transition-colors duration-200
-                           focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-primary"
-              >
-                {primaryCta.label}
-              </Link>
+              primaryCta.external ? (
+                <a
+                  href={primaryCta.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-gold hover:bg-gold-light text-white font-semibold
+                             px-8 py-3 rounded-lg transition-colors duration-200
+                             focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-primary"
+                >
+                  {primaryCta.label}
+                </a>
+              ) : (
+                <Link
+                  href={primaryCta.href}
+                  className="inline-block bg-gold hover:bg-gold-light text-white font-semibold
+                             px-8 py-3 rounded-lg transition-colors duration-200
+                             focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-primary"
+                >
+                  {primaryCta.label}
+                </Link>
+              )
             )}
             {secondaryCta && (
-              <Link
-                href={secondaryCta.href}
-                className="inline-block border-2 border-white/70 hover:border-white text-white
-                           font-semibold px-8 py-3 rounded-lg transition-colors duration-200
-                           focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
-              >
-                {secondaryCta.label}
-              </Link>
+              secondaryCta.external ? (
+                <a
+                  href={secondaryCta.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block border-2 border-white/70 hover:border-white text-white
+                             font-semibold px-8 py-3 rounded-lg transition-colors duration-200
+                             focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
+                >
+                  {secondaryCta.label}
+                </a>
+              ) : (
+                <Link
+                  href={secondaryCta.href}
+                  className="inline-block border-2 border-white/70 hover:border-white text-white
+                             font-semibold px-8 py-3 rounded-lg transition-colors duration-200
+                             focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
+                >
+                  {secondaryCta.label}
+                </Link>
+              )
             )}
           </div>
         )}

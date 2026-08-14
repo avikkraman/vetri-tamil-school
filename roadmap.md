@@ -8,12 +8,13 @@
 4. ~~**2.1** Wire contact form to real backend (Formspree)~~ ✓
 5. ~~**2.2** Add Google Maps embed to contact page~~ removed
 6. ~~**8.1** Edit class descriptions for each grade level~~ ✓
-7. **8.2** Add principal's video message (About or Home page)
-8. **3.1** Load Noto Sans Tamil from Google Fonts
-9. **3.2** Add favicon
-10. **3.3** Add Open Graph metadata
-11. **3.4** Add social links to footer
-12. **7.1** Add custom 404 page
+7. **6.2** Add badminton event to events
+8. **8.2** Add principal's video message (About or Home page)
+9. **3.1** Load Noto Sans Tamil from Google Fonts
+10. **3.2** Add favicon
+11. **3.3** Add Open Graph metadata
+12. **3.4** Add social links to footer
+13. **7.1** Add custom 404 page
 
 ---
 
