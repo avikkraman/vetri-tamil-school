@@ -167,7 +167,7 @@ export default function HomePage() {
             Ready to enroll?
           </h2>
           <p className="mt-3 text-white/80 max-w-xl mx-auto">
-            Registration for the 2025–26 school year is open. Spaces are limited — reach out today.
+            Registration for the 2026–27 school year is open. Spaces are limited — reach out today.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a
