@@ -8,6 +8,7 @@ export const SCHOOL = {
   phone: '604-368-8428',
   location: 'Surrey, British Columbia, Canada',
   founded: '2018',
+  instagram: '@vetritamilschool',
   thirukkural: {
     verse: 'கற்க கசடறக் கற்பவை கற்றபின் நிற்க அதற்குத் தக.',
     translation:
