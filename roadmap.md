@@ -12,7 +12,7 @@
 8. **3.1** Load Noto Sans Tamil from Google Fonts
 9. ~~**3.2** Add favicon~~ ✓
 10. **3.3** Add Open Graph metadata
-11. **3.4** Add social links to footer
+11. ~~**3.4** Add social links to footer~~ ✓
 12. **7.1** Add custom 404 page
 
 ---
@@ -44,7 +44,7 @@
 | 3.1 | Tamil text uses system fonts (Latha, Tamil MN) — inconsistent across devices | `app/layout.tsx`, `globals.css` | Load **Noto Sans Tamil** from Google Fonts |
 | ~~3.2~~ | ~~No favicon~~ | ~~`public/`~~ | ✓ Done — `src/app/icon.png` (Vetri crest logo) via Next.js icon convention |
 | 3.3 | No Open Graph metadata | `app/layout.tsx` | Add `og:title`, `og:description`, `og:image` for link previews |
-| 3.4 | No social links in footer | `components/Footer.tsx` | Add Facebook / WhatsApp / Instagram icons |
+| ~~3.4~~ | ~~No social links in footer~~ | ~~`components/Footer.tsx`~~ | ✓ Done — Instagram (@vetritamilschool) added |
 
 ---
 
