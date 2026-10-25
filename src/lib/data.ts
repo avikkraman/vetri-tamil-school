@@ -125,6 +125,6 @@ export const FAQ = [
   },
   {
     q: 'Is there a registration form?',
-    a: 'Yes — use the Contact page to reach us and we will send you the enrollment package by email.',
+    a: 'Registration for the 2026–27 school year is currently closed. Reach out via the Contact page and we will let you know when enrollment reopens.',
   },
 ]
