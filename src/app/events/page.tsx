@@ -10,17 +10,19 @@ export const metadata: Metadata = {
 }
 
 const categoryColors: Record<string, string> = {
-  Cultural: 'bg-gold/10 text-gold-dark border-gold/20',
-  Academic: 'bg-primary/10 text-primary border-primary/20',
-  Enrollment: 'bg-green-50 text-green-700 border-green-200',
-  General: 'bg-gray-50 text-gray-600 border-gray-200',
+  Cultural: 'bg-gold/20 text-gold-dark border-gold',
+  Academic: 'bg-primary/15 text-primary border-primary',
+  Enrollment: 'bg-green-100 text-green-800 border-green-600',
+  Sports: 'bg-blue-100 text-blue-800 border-blue-600',
+  General: 'bg-gray-100 text-gray-800 border-gray-500',
 }
 
 const categoryAccent: Record<string, string> = {
   Cultural: 'border-l-gold',
   Academic: 'border-l-primary',
-  Enrollment: 'border-l-green-500',
-  General: 'border-l-gray-300',
+  Enrollment: 'border-l-green-600',
+  Sports: 'border-l-blue-600',
+  General: 'border-l-gray-400',
 }
 
 export default function EventsPage() {
@@ -139,7 +141,7 @@ function EventCard({ event, compact }: EventCardProps) {
         <div className="flex flex-wrap items-start gap-3 mb-2">
           <h3 className="flex-1 font-bold text-gray-900 text-lg leading-snug">{event.title}</h3>
           <span
-            className={`text-xs font-medium px-2.5 py-1 rounded-full border shrink-0 ${
+            className={`text-xs font-semibold px-2.5 py-1 rounded-full border shrink-0 ${
               categoryColors[event.category] ?? categoryColors.General
             }`}
           >

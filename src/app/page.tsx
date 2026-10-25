@@ -141,7 +141,7 @@ export default function HomePage() {
                 key={event.id}
                 title={event.title}
                 badge={event.category}
-                badgeColor={event.category === 'Cultural' ? 'gold' : event.category === 'Academic' ? 'primary' : 'green'}
+                badgeColor={event.category === 'Cultural' ? 'gold' : event.category === 'Academic' ? 'primary' : event.category === 'Sports' ? 'blue' : 'green'}
                 footer={
                   <p className="text-gray-500 text-xs">
                     📅 {formatDisplayDate(event.date)} · {event.time}

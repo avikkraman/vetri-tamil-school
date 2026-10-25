@@ -8,10 +8,10 @@ interface CardProps {
 }
 
 const badgeStyles: Record<string, string> = {
-  gold: 'bg-gold/10 text-gold-dark',
-  primary: 'bg-primary/10 text-primary',
-  green: 'bg-green-100 text-green-700',
-  blue: 'bg-blue-100 text-blue-700',
+  gold: 'bg-gold/20 text-gold-dark',
+  primary: 'bg-primary/15 text-primary',
+  green: 'bg-green-100 text-green-800',
+  blue: 'bg-blue-100 text-blue-800',
 }
 
 export default function Card({
@@ -33,7 +33,7 @@ export default function Card({
         </div>
         {badge && (
           <span
-            className={`shrink-0 text-xs font-medium px-2.5 py-1 rounded-full ${badgeStyles[badgeColor]}`}
+            className={`shrink-0 text-xs font-semibold px-2.5 py-1 rounded-full ${badgeStyles[badgeColor]}`}
           >
             {badge}
           </span>
