@@ -27,7 +27,7 @@ export const NAV_LINKS = [
 export const CLASS_LEVELS = [
   {
     id: 1,
-    level: 'LKG',
+    level: 'Preschool',
     levelTamil: 'கீழ் மழலையர் பள்ளி',
     icon: '🌱',
     description: 'A gentle, joyful welcome — children learn vowels and take their first steps with letters through songs, stories, and play.',
@@ -35,7 +35,7 @@ export const CLASS_LEVELS = [
   },
   {
     id: 2,
-    level: 'UKG',
+    level: 'Kindergarten',
     levelTamil: 'மேல் மழலையர் பள்ளி',
     icon: '🌼',
     description: 'Children begin with a review of vowels, then explore all 18 consonants and compound letters, building a warm vocabulary — colors, animals, and counting to one hundred.',
@@ -85,8 +85,8 @@ export const CLASS_LEVELS = [
 
 
 export const TEACHERS = [
-  { name: 'Malini Moorthy', role: 'LKG' },
-  { name: 'Raja Rajeswari J', role: 'UKG & Grade 5' },
+  { name: 'Malini Moorthy', role: 'Preschool' },
+  { name: 'Raja Rajeswari J', role: 'Kindergarten & Grade 5' },
   { name: 'Bhuvana Ashok', role: 'Grade 1' },
   { name: 'Rajespari S', role: 'Grade 2' },
   { name: 'Ravichandran K', role: 'Grade 3' },

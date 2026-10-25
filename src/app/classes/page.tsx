@@ -15,7 +15,7 @@ export default function ClassesPage() {
       <Hero
         title="Tamil Classes"
         titleTamil="தமிழ் வகுப்புகள்"
-        subtitle="Seven grade levels from LKG through G5. Saturday sessions designed around busy family schedules."
+        subtitle="Seven grade levels from Preschool through G5. Saturday sessions designed around busy family schedules."
       />
 
       {/* ── Level detail cards ── */}
