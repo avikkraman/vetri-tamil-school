@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <p className="font-bold text-lg">{SCHOOL.name}</p>
             <p className="tamil text-gold-light text-base mt-1">{SCHOOL.nameTamil}</p>
-            <p className="text-primary-light mt-3 text-sm leading-relaxed">
+            <p className="text-white/70 mt-3 text-sm leading-relaxed">
               {SCHOOL.tagline}
             </p>
           </div>
