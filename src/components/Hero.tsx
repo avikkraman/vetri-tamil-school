@@ -6,6 +6,8 @@ interface HeroProps {
   subtitle: string
   primaryCta?: { label: string; href: string; external?: boolean }
   secondaryCta?: { label: string; href: string; external?: boolean }
+  /** Non-interactive status line, e.g. an enrollment notice. Rendered as a pill, not a link. */
+  note?: string
   /** Use 'home' for the large landing hero, 'page' for inner page banners */
   variant?: 'home' | 'page'
 }
@@ -16,6 +18,7 @@ export default function Hero({
   subtitle,
   primaryCta,
   secondaryCta,
+  note,
   variant = 'page',
 }: HeroProps) {
   const isHome = variant === 'home'
@@ -58,6 +61,12 @@ export default function Hero({
         >
           {subtitle}
         </p>
+
+        {note && (
+          <p className="mt-4 inline-block rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-sm font-medium text-white/90">
+            {note}
+          </p>
+        )}
 
         {(primaryCta || secondaryCta) && (
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">

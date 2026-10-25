@@ -19,7 +19,7 @@ export default function HomePage() {
         title={SCHOOL.name}
         titleTamil={SCHOOL.nameTamil}
         subtitle={`${SCHOOL.tagline} — Saturday Tamil classes for children in ${SCHOOL.location}.`}
-        primaryCta={{ label: 'Enroll Your Child', href: 'https://docs.google.com/forms/d/e/1FAIpQLScaHjlUYpSzt4gZQWY9748qU6FohXEkkrsA0weyGJvZ0skxNQ/viewform', external: true }}
+        note="2026–27 school year enrollment is closed."
         secondaryCta={{ label: 'View Classes', href: '/classes' }}
       />
 
@@ -164,21 +164,13 @@ export default function HomePage() {
       <section className="bg-primary py-16" aria-labelledby="cta-heading">
         <div className="section text-center text-white">
           <h2 id="cta-heading" className="text-3xl sm:text-4xl font-bold">
-            Ready to enroll?
+            2026–27 Enrollment Closed
           </h2>
           <p className="mt-3 text-white/80 max-w-xl mx-auto">
-            Registration for the 2026–27 school year is open. Spaces are limited — reach out today.
+            Registration for the 2026–27 school year is now closed. Check back for updates on
+            next year's enrollment.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScaHjlUYpSzt4gZQWY9748qU6FohXEkkrsA0weyGJvZ0skxNQ/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gold hover:bg-gold-light text-white font-semibold
-                         px-8 py-3 rounded-lg transition-colors"
-            >
-              Enroll Now
-            </a>
             <Link
               href="/about"
               className="inline-block border-2 border-white/60 hover:border-white text-white

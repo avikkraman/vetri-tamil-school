@@ -59,18 +59,11 @@ export default function ContactPage() {
       {/* ── Enrollment note ── */}
       <section className="py-10 bg-primary/5 border-y border-primary/10">
         <div className="section max-w-3xl mx-auto text-center">
-          <h2 className="text-xl font-bold text-gray-900">Ready to enroll?</h2>
+          <h2 className="text-xl font-bold text-gray-900">2026–27 Enrollment Closed</h2>
           <p className="text-gray-600 mt-2 text-sm leading-relaxed">
-            Complete our online registration form to enroll your child.
+            Registration for the 2026–27 school year is now closed. Reach out using the form
+            above with any questions, and we'll follow up when next year's enrollment opens.
           </p>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScaHjlUYpSzt4gZQWY9748qU6FohXEkkrsA0weyGJvZ0skxNQ/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary mt-4 inline-block"
-          >
-            Enroll Now
-          </a>
         </div>
       </section>
     </>

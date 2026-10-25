@@ -47,14 +47,9 @@ export default function Navbar() {
             )
           })}
           <li>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScaHjlUYpSzt4gZQWY9748qU6FohXEkkrsA0weyGJvZ0skxNQ/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary text-sm ml-2"
-            >
-              Enroll Now
-            </a>
+            <span className="ml-2 px-3 py-1.5 rounded-md text-sm font-medium text-gray-500 bg-gray-100">
+              Enrollment Closed
+            </span>
           </li>
         </ul>
 
@@ -102,15 +97,9 @@ export default function Navbar() {
               )
             })}
             <li className="pt-2">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScaHjlUYpSzt4gZQWY9748qU6FohXEkkrsA0weyGJvZ0skxNQ/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setMenuOpen(false)}
-                className="btn-primary w-full text-center block"
-              >
-                Enroll Now
-              </a>
+              <span className="w-full text-center block px-4 py-3 rounded-md font-medium text-gray-500 bg-gray-100">
+                Enrollment Closed
+              </span>
             </li>
           </ul>
         </div>
