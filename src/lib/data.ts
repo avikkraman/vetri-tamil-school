@@ -113,7 +113,7 @@ export const BOARD_MEMBERS = [
 export const FAQ = [
   {
     q: 'When does the school year run?',
-    a: 'Classes run September through June, on Saturdays. A short summer session may be offered — check Events for updates.',
+    a: 'Classes run September through June, on Saturdays.',
   },
   {
     q: 'What is the fee structure?',
